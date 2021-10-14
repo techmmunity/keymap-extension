@@ -1,0 +1,62 @@
+{
+  "name": "keymap",
+  "version": "0.0.2",
+  "license": "Apache-2.0",
+  "displayName": "Techmmunity Keymap",
+  "publisher": "techmmunity",
+  "author": "Techmmunity",
+  "description": "Techmmunity Keymap",
+  "icon": "resources/logo.png",
+  "homepage": "https://github.com/techmmunity/keymap-extension#readme",
+  "bugs": {
+    "url": "https://github.com/techmmunity/keymap-extension/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techmmunity/extensions-extension.git"
+  },
+  "engines": {
+    "vscode": "^1.61.0"
+  },
+  "categories": [
+    "Keymaps"
+  ],
+  "contributes": {
+    "keybindings": [
+      {
+        "key": "ctrl+alt+s",
+        "command": "workbench.action.files.saveFiles"
+      },
+      {
+        "key": "ctrl+/",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
+      },
+      {
+        "key": "alt+up",
+        "command": "notebook.cell.moveUp",
+        "when": "notebookEditorFocused && !inputFocus"
+      },
+      {
+        "key": "alt+down",
+        "command": "notebook.cell.moveDown",
+        "when": "notebookEditorFocused && !inputFocus"
+      },
+      {
+        "key": "ctrl+shift+d",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+      },
+      {
+        "key": "ctrl+t",
+        "command": "npm-script.test",
+        "when": "!terminalFocus"
+      },
+      {
+        "key": "ctrl+shift+x",
+        "command": "editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+      }
+    ]
+  }
+}
