@@ -1,6 +1,6 @@
 {
   "name": "keymap",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "license": "Apache-2.0",
   "displayName": "Techmmunity Keymap",
   "publisher": "techmmunity",
@@ -56,6 +56,46 @@
         "key": "ctrl+shift+x",
         "command": "editor.action.deleteLines",
         "when": "textInputFocus && !editorReadonly"
+      },
+      {
+        "key": "shift+up",
+        "command": "cursorUpSelect",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "shift+down",
+        "command": "cursorDownSelect",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "shift+up",
+        "command": "list.expandSelectionUp",
+        "when": "listFocus && listSupportsMultiselect && !inputFocus"
+      },
+      {
+        "key": "shift+down",
+        "command": "list.expandSelectionDown",
+        "when": "listFocus && listSupportsMultiselect && !inputFocus"
+      },
+      {
+        "key": "shift+up",
+        "command": "cursorColumnSelectUp",
+        "when": "editorColumnSelection && textInputFocus"
+      },
+      {
+        "key": "shift+down",
+        "command": "cursorColumnSelectDown",
+        "when": "editorColumnSelection && textInputFocus"
+      },
+      {
+        "key": "ctrl+shift+up",
+        "command": "editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+shift+down",
+        "command": "editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
       }
     ]
   }
