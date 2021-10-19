@@ -15,12 +15,16 @@ A keymap for VSCode.
 
 ## Keybindings
 
-| key                | command                   |
-| ------------------ | ------------------------- |
-| `Ctrl + Alt + S`   | Save All Files            |
-| `Ctrl + /`         | Toggle Line Comment       |
-| `Alt + UpArrow`    | Move Line Up              |
-| `Alt + DownArrow`  | Move Line Down            |
-| `Ctrl + Shift + D` | Copy Line And Paste Above |
-| `Ctrl + T`         | Run `yarn test`           |
-| `Ctrl + Shift + X` | Delete Line               |
+| key                   | command                   |
+| --------------------- | ------------------------- |
+| `Ctrl + Alt + S`      | Save All Files            |
+| `Ctrl + /`            | Toggle Line Comment       |
+| `Alt + UpArrow`       | Move Line Up              |
+| `Alt + DownArrow`     | Move Line Down            |
+| `Ctrl + Shift + D`    | Copy Line And Paste Above |
+| `Ctrl + T`            | Run `yarn test`           |
+| `Ctrl + Shift + X`    | Delete Line               |
+| `Ctrl + Shift + Up`   | Add Cursor Above          |
+| `Ctrl + Shift + Down` | Add Cursor Bellow         |
+| `Shift + Up`          | Up Select                 |
+| `Shift + Down`        | Down Select               |
